@@ -2,6 +2,9 @@
     <string name="app_name">AboutMe</string>
     <string name="name">Leonardo Siqueira"</string>
     <string name="yellow_star">Estrela</string>
-    <string name="bio">Meu Nome É Leonardo Siqueira
+    <string name="bio">\n\nMeu Nome É Leonardo Siqueira\n
 Trabalho Com T.I A 22 Anos Na Aréa De Infra, Redes, Servidor E Manutenção. Resolvir Migrar Para A Aréa De Desenvolvedor.</string>
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
+
 </resources>
