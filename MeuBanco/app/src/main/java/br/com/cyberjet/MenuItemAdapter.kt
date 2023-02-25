@@ -3,6 +3,7 @@ package br.com.cyberjet
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class MenuItemAdapter : RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterViewHolder>(){
@@ -10,7 +11,7 @@ class MenuItemAdapter : RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterView
     private val list = mutableListOf<MenuItemModel>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuItemAdapterViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_main, parent, attachToRoot=false )
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_menu, parent, false )
         return MenuItemAdapterViewHolder(view)
     }
 
@@ -22,10 +23,17 @@ class MenuItemAdapter : RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterView
         holder.iniciaViews(list[position])
 
     }
+    fun setItensList(list: ArrayList<MenuItemModel>){
+        this.list.clear()
+        this.list.addAll(list)
 
-    class MenuItemAdapterViewHolder(val itemView: View) : RecyclerView.ViewHolder(itemView) {
+    }
+    class MenuItemAdapterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val tvTitle by lazy {
+            itemView.findViewById<TextView>(R.id.tv_title)
+        }
         fun iniciaViews(item: MenuItemModel) {
-            item.titulo
+            tvTitle.text = item.titulo
         }
     }
 }
