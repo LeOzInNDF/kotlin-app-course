@@ -30,22 +30,31 @@ class MainActivity : AppCompatActivity() {
                     "cartões"
                 ),
                 MenuItemModel(
-                    "Meus Comprovantes"
+                    "meus comprovantes"
                 ),
                 MenuItemModel(
-                    "Investimentos"
+                    "investimentos"
                 ),
                 MenuItemModel(
-                    "Portabilidade de Salário"
+                    "portabilidade de salário"
                 ),
                 MenuItemModel(
-                    "Crédito"
+                    "poupança"
 
                 ),
                 MenuItemModel(
-                    "Seguros"
+                    "crédito"
 
                 ),
+                MenuItemModel(
+                    "renegociação"
+
+                ),
+                MenuItemModel(
+                    "pic"
+
+                ),
+
                 )
         )
 
